@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/orgamistry/css/estilo.css">
+    <link rel="stylesheet" href="/orgamistry/css/estrutural.css">
+    <link rel="shortcut icon" href="/orgamistry/img/atomo.ico">
+    <title>Orgamistry</title>
+
+</head>
+
+<body>
+    <ul class="menu">
+        <div class="dropdown">
+            <li class="dropbtn"><a href=""><img src="/orgamistry/img/atommaior.png" alt=""></a></li>
+            <div class="dropdown-content">
+                <div class="nomen">
+                    <li><a href="/orgamistry/html/nomenclatura.html">Nomenclatura</a></li>
+                </div>
+                <div class="molec">
+                    <li><a href="/orgamistry/html/formulamolecular.html">Fórmula Molecular</a></li>
+                </div>
+                <div class="estrut">
+                    <li><a href="/orgamistry/html/estrutural.html">Fórmula Estrutural</a></li>
+                </div>
+            </div>
+        </div>
+        <li><a href="/orgamistry/index.html">Home</a></li>
+        <li><a href="/orgamistry/html/outrasPag/exercicios.html">Exercícios</a></li>
+        <li><a href="/orgamistry/html/outrasPag/links.html">Links</a></li>
+        <li><a href="/orgamistry/html/outrasPag/sobre.html">Sobre</a></li>
+        <li><a href="/orgamistry/html/outrasPag/ajuda.html">Ajuda</a></li>
+        <li><a href="/orgamistry/html/outrasPag/contato.html">Contato</a></li>
+    </ul>
+    <legend class="legenda">Arraste os átomos para a área</legend>
+
+    <center>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="C">C</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="CO">CO</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="COOH">COOH</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="O">O</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="OH">OH</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="F">F</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="Cl">Cl</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="Br">Br</div>
+        <div class="arrastavel" draggable="true" ondragstart="arrastar(event)" id="I">I</div>
+        <div class="limpar" onclick="limparArea()">Limpar</div>
+        <br><br>
+        <div id="area" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <br><br>
+        <p id="nomeMolecula"></p>
+        <p id="simplificada"></p>
+    </center>
+    
+    <footer>
+        <p><a>orgamistry@gmail.com</a><br>
+          Autores: Ana Maria Espindula e Victor Bueno Pollnow </p>
+      </footer>
+
+    <script src="/orgamistry/js/estrutural.js"></script>
+</body>

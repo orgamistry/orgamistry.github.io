@@ -1,0 +1,40 @@
+/** outrasPag**/
+
+.titulo2 {
+    color: rgb(207, 255, 207);
+    font-size: 85px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .all-browsers>h1,
+  .browser {
+    margin: 10px;
+    padding: 30px;
+  }
+  
+  .browser {
+    background: rgb(37, 177, 19);
+    font-size: 18px;
+  }
+
+  .h1design {
+    color: white;
+  }
+  
+  .h2design {
+    color: rgb(255, 255, 255);
+  }
+
+  .h3design {
+    color: rgb(255, 255, 255);
+  font-size: 20px;
+  }
+  
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: #005706;
+  }

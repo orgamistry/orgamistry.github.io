@@ -1,0 +1,107 @@
+/** Estrutural **/
+
+.arrastavel {
+    width: 50px;
+    height: 50px;
+    color: #d8d8d8c7;
+    line-height: 50px;
+    text-align: center;
+    background: radial-gradient(circle,#0e8316, #063d14);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #015000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.arrastavel:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.limpar {
+    width: 70px;
+    height: 60px;
+    color: #d8d8d8c7;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    background: radial-gradient(circle, #0e8316, #063d14);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #015000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.limpar:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+#area .arrastavel {
+    position: absolute;
+}
+
+#area {
+    width: 750px;
+    height: 300px;
+    border: 2px solid #d8d8d8c7;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ligacao {
+    position: absolute;
+    background-color: black;
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+
+#nomeMolecula,
+#simplificada {
+    color: #d8d8d8c7;
+    font-size: 23px;
+}
+
+#botao {
+    background-color: #015000;
+    font-size: large;
+    color: #d8d8d8c7;
+    height: 55px;
+    width: 80px;
+    border-radius: 10%;
+}
+
+.liga {
+    font: bold;
+    font-size: larger;
+    color: #d8d8d8c7;
+}
+
+.botao {
+    all: unset;
+    border-radius: 20%;
+    border: 1px solid #d8d8d8c7;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.botao:checked {
+    background-color: purple;
+}
+
+.legenda {
+    text-align: center;
+    color: rgb(207, 255, 207);
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
